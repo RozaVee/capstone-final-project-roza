@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dragon Boat Regatta Guide</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <section class="hero">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="videos/302229.mp4" type="video/mp4" />
+        Your browser does not support this video.
+      </video>
+      <div class="hero-overlay">
+        <h1>Dragon Boat Regatta Guide</h1>
+        <p>Discover races, explore events, and find your next adventure.</p>
+      </div>
+    </section>
+    <section class="about-section">
+      <h2>About Our Guide</h2>
+      <p>
+        The Dragon Boat Regatta Guide is a resource designed to help paddlers,
+        teams, and spectators discover dragon boat racing events happening
+        throughout British Columbia and beyond. Whether you are an experienced
+        paddler, a beginner interested in joining a team, or someone looking to
+        experience the excitement of a regatta, our guide makes it easier to
+        find events.
+      </p>
+    </section>
+    <main class="container section">
+      <h2>Find Regattas by Month</h2>
+      <p>Select a month to discover dragon boat events.</p>
+
+      <form id="monthForm">
+        <label for="month">Choose a month:</label>
+
+        <select id="month">
+          <option value="">Select a Month</option>
+          <option value="January">January</option>
+          <option value="February">February</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="August">August</option>
+          <option value="September">September</option>
+          <option value="October">October</option>
+          <option value="November">November</option>
+          <option value="December">December</option>
+        </select>
+        <button type="submit">Search Regattas</button>
+      </form>
+
+      <section id="results">
+        <h2>Monthly Events</h2>
+        <p>Select a month to see the events.</p>
+        <div id="eventGrid"></div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2026 Dragon Boat Regatta Guide</p>
+    </footer>
+  </body>
+</html>
